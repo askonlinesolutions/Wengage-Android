@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="size_1">1sp</dimen>
+    <dimen name="size_2">2sp</dimen>
+    <dimen name="size_3">3sp</dimen>
+    <dimen name="size_4">4sp</dimen>
+    <dimen name="size_5">5sp</dimen>
+    <dimen name="size_6">6sp</dimen>
+    <dimen name="size_7">7sp</dimen>
+    <dimen name="size_8">8sp</dimen>
+    <dimen name="size_9">9sp</dimen>
+    <dimen name="size_10">10sp</dimen>
+    <dimen name="size_11">11sp</dimen>
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="size_13">13sp</dimen>
+    <dimen name="size_14">14sp</dimen>
+    <dimen name="size_15">15sp</dimen>
+    <dimen name="size_16">16sp</dimen>
+    <dimen name="size_17">17sp</dimen>
+    <dimen name="size_18">18sp</dimen>
+    <dimen name="size_19">19sp</dimen>
+    <dimen name="size_20">20sp</dimen>
+    <dimen name="size_22">22sp</dimen>
+    <dimen name="size_24">24sp</dimen>
+    <dimen name="size_25">25sp</dimen>
+    <dimen name="size_50">50sp</dimen>
+    <dimen name="keyboard_height">230dip</dimen>
+    <dimen name="item_offset">4dp</dimen>
+    <dimen name="button_height">45sp</dimen>
+
+    <!--fragment profile home -->
+    <dimen name="edit_margin">20dp</dimen>
+    <dimen name="edit_height">55dp</dimen>
+</resources>

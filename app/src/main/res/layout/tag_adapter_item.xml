@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+        android:id="@+id/allTv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/shape_round_category_top"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="All"
+        android:textColor="@color/text_color_meg"
+        android:textSize="@dimen/size_14" />
+</LinearLayout>

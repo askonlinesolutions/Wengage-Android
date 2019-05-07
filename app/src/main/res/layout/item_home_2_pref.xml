@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:background="@drawable/shape_round_bg_2"
+    android:layout_marginBottom="10dp"
+    android:padding="5dp"
+    android:layout_marginRight="7dp" >
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="THE CITY "
+        android:id="@+id/item_home_2_pref_tv"
+        android:gravity="center"
+        android:textSize="@dimen/size_9"
+        android:textColor="@color/text_color" />
+
+</LinearLayout>

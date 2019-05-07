@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Activity.Main.CustomizedProfileActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="onClickBack"
+        android:padding="5dp"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_customized_bottom"
+        android:layout_below="@+id/back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Customize Your Profile:"
+                android:textColor="@color/black" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Optional:"
+                android:textColor="@color/colorAccent" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:id="@+id/activity_customized_inOwn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:hint="In Your Own Words"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:id="@+id/activity_customized_home"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:hint="Home Town"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:id="@+id/activity_customized_fav_city"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:hint="Favourite City In The World "
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:id="@+id/activity_customized_fav_res"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:hint="Favourite Restaurant"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:id="@+id/activity_customized_extra_hr"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:hint="With An Extra Hour"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:id="@+id/activity_comtomize_txtyourWork"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:hint="Your Work And/Or Your Passion"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:id="@+id/activity_comtomize_txtSsocialmendia"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:hint="Social Media Handle"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/activity_customized_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+            android:id="@+id/activity_comtomize_txtSkip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_filled_pink"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Skip"
+            android:textColor="@color/white" />
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+            android:id="@+id/activity_comtomize_txtComplete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_filled_pink"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Complete"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

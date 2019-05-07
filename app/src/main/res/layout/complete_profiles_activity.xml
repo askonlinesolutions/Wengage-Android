@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1" />
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_layout"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:orientation="vertical">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".72"
+                android:gravity="center_horizontal"
+                android:text="@string/thank_you_for_downloading_the_wengage_app"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/size_18" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:alpha=".72"
+                android:gravity="center_horizontal"
+                android:text="@string/start_using_wengage_now_or_watch_quick_demo"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/size_18" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:alpha=".72"
+                android:gravity="center_horizontal"
+                android:text="Start using Wengage"
+                android:textColor="@color/text_color_meg"
+                android:textSize="@dimen/size_18" />
+
+        </LinearLayout>
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBlack
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/_35sdp"
+            android:background="@drawable/shape_button"
+            android:gravity="center"
+            android:onClick="nextScreen"
+            android:text="Go"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

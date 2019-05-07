@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2000000"
+    android:orientation="vertical"
+    tools:context=".pikship_app_layouts.TabFragment">
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="63dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_marginBottom="209dp"-->
+    <!--android:layout_marginStart="156dp"-->
+    <!--android:drawableLeft="@drawable/arrow_up"-->
+    <!--android:background="@drawable/circular_textview"-->
+    <!--android:gravity="center" />-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/upbtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@drawable/circular_textview"-->
+    <!--android:gravity="center">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/size_10"-->
+    <!--android:src="@drawable/arrow_up" />-->
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/upbtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_above="@+id/radioGroup"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@drawable/circular_textview"-->
+        <!--android:gravity="center">-->
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/circular_textview"
+            android:foregroundGravity="center"
+            android:src="@drawable/arrow_up" />
+        <!--</LinearLayout>-->
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_50"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/pick_up_RB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3374FF"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/size_10"
+                android:text="Pick Up"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/delivery_RB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/size_10"
+                android:text="Delivery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textColor="@color/black" />
+            <!--<TextView-->
+            <!--android:id="@+id/orders_notification_tv"-->
+            <!--android:layout_width="@dimen/dp16"-->
+            <!--android:layout_height="@dimen/dp16"-->
+            <!--android:layout_marginStart="@dimen/dp9"-->
+            <!--android:background="@drawable/circular_textview"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/dp1"-->
+            <!--android:text="2"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/text_10" />-->
+
+            <RadioButton
+                android:id="@+id/cancelled_RB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/size_10"
+                android:text="Cancelled" />
+
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_below="@+id/radioGroup">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pic_up_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_15"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/deliveri_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_15"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cancelled_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_15"
+                android:visibility="gone" />
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="40dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_20"
+            app:srcCompat="@drawable/logo_old" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Log In"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:hint="Username"
+                    android:imeOptions="actionNext"
+                    android:maxLength="20"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#999"
+                    android:textSize="@dimen/size_14" />
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#999"
+                    android:textSize="@dimen/size_14" />
+
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBlack
+                    android:id="@+id/logIn_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/shape_button"
+                    android:gravity="center"
+                    android:onClick="checkLogin"
+                    android:text="Log In"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:id="@+id/forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot password?"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/text_color_meg"
+                        android:textSize="@dimen/size_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_1"
+                        android:background="@color/text_color_meg"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:id="@+id/SignUp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/join_drawable"
+                android:gravity="center"
+                android:text="Join"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color_meg"
+                android:textSize="@dimen/size_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/text_color_meg"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

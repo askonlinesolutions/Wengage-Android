@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="EVENTS" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_venues"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icon_main"
+        android:title="" />
+
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notifications" />
+
+
+    <item
+        android:id="@+id/navigation_events"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="IN THE KNOW" />
+
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:visibility="gone"
+                android:src="@drawable/profileg" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/size_5"
+                android:layout_marginRight="@dimen/size_5"
+                android:background="@color/white"
+                android:text="Marry"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_12" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/size_5"
+                android:layout_marginRight="@dimen/size_5"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/size_5"
+                android:text="London"
+                android:textSize="@dimen/size_12" />
+
+
+        </LinearLayout>
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            android:paddingBottom="@dimen/size_5"
+            android:text="Influencer/kjdkskfksdjsdkjksjdkjskjdksjkddjskjkjskdjjduuewi ewhdiwend sndshjd jsdnjsd sjdjs sjdkjskdn sdjjsdh hsdjshjd sjdjshjds dsjdhsd skdhsdskdskdkslkdlk"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_10" />
+
+
+
+    </LinearLayout>
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewLight
+        android:id="@+id/news_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_5"
+        android:paddingBottom="@dimen/size_5"
+        android:text="Influencer/kjdkskfksdjsdkjksjdkjskjdksjkddjskjkjskdjjduuewi ewhdiwend sndshjd jsdnjsd sjdjs sjdkjskdn sdjjsdh hsdjshjd sjdjshjds dsjdhsd skdhsdskdskdkslkdlk"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_10" />
+
+</LinearLayout>

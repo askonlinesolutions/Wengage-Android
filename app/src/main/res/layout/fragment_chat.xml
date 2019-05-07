@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.Main.ChatFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bg_1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:text="CHAT"
+            android:id="@+id/fragment_chat_title"
+            android:background="@color/E7E7E7"
+            android:textColor="@color/text_color"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textSize="@dimen/size_13"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"/>
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Kelly + 3"
+            android:id="@+id/fragment_chat_top_names"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:textSize="@dimen/size_14"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_toRightOf="@+id/fragment_chat_title"/>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/fragment_chat_layout_arrow"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_chat_arrow"
+                android:src="@drawable/arrow_down"
+                android:layout_marginRight="15dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/fragment_chat_layout_call"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/fragment_chat_layout_arrow"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_chat_call"
+                android:src="@drawable/ic_phone"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ECF0F1"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/fragment_chat_title"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_chat_recycler_top_profiles"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:visibility="gone"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/fragment_chat_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabTextAppearance="@style/MyCustomTabText"
+        app:tabSelectedTextColor="@color/text_color"
+        app:tabTextColor="@color/text_color"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/tab_indicator"
+        app:tabIndicatorHeight="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_chat_view_pager"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp">
+
+        <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/pink_circle"
+            android:layout_gravity="center">
+
+            <com.askonlinesolutions.wengage.utils.CircleImageView
+                android:id="@+id/recycler_top_profiles_image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="5dp"
+
+                android:layout_gravity="center"
+                android:src="@drawable/ic_loading"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/recycler_top_profiles_image_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/blue_circle"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+        <!-- <ImageView
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:id="@+id/recycler_top_profiles_image"
+             android:src="@drawable/profileg"/>-->
+        <ImageView
+            android:id="@+id/top_profile_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            app:srcCompat="@drawable/ic_check" />
+
+    </RelativeLayout>
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+        android:id="@+id/recycler_top_profiles_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/size_10"
+        android:textStyle="bold" />
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+        android:id="@+id/recycler_top_profiles_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:textSize="@dimen/size_9" />
+
+</LinearLayout>

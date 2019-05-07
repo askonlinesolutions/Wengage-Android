@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_round_white_"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_1"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/white"
+                android:gravity="bottom|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_1"
+                    app:srcCompat="@drawable/icon_art"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/text_1"
+                android:text="Rstaurant"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_2"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/white"
+                android:gravity="bottom|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_2"
+                    app:srcCompat="@drawable/icon_art"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/text_2"
+                android:text="Rstaurant"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_3"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/white"
+                android:gravity="bottom|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_3"
+                    app:srcCompat="@drawable/icon_art"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/text_3"
+                android:text="Rstaurant"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_4"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/white"
+                android:gravity="bottom|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_4"
+                    app:srcCompat="@drawable/icon_art"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/text_4"
+                android:text="Rstaurant"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_5"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/white"
+                android:gravity="bottom|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_5"
+                    app:srcCompat="@drawable/icon_art"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/text_5"
+                android:text="Rstaurant"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_6"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/white"
+                android:gravity="bottom|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_6"
+                    app:srcCompat="@drawable/icon_art"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/text_6"
+                android:text="Rstaurant"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_7"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/white"
+                android:gravity="bottom|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_7"
+                    app:srcCompat="@drawable/icon_art"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/text_7"
+                android:text="Rstaurant"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_8"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/white"
+                android:gravity="bottom|center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_8"
+                    app:srcCompat="@drawable/icon_art"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/text_8"
+                android:text="Rstaurant"
+                android:textColor="@color/text_color"
+                android:textSize="11dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@color/white"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_grid_layout_image"
+            android:src="@drawable/icon_art"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/home_grid_layout_text"
+        android:text="Rstaurant"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:background="@color/white"/>
+    </LinearLayout>-->
+
+</LinearLayout>

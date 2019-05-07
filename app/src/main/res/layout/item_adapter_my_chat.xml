@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_5">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="110dp"-->
+                <!--android:layout_height="110dp"-->
+                <!--android:layout_centerInParent="true">-->
+
+                <ImageView
+                    android:id="@+id/profile_icon"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/pink_circle"
+                    android:padding="3dp"
+                    android:visibility="visible"
+                    tools:ignore="VectorDrawableCompat" />
+
+
+                <com.askonlinesolutions.wengage.utils.CircleImageView
+                    android:id="@+id/item_adapter_my_chat_images"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerInParent="true"
+                 />
+
+
+            <!--</RelativeLayout>-->
+
+            <ImageView
+                android:id="@+id/item_adapter_my_chat_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/profile"
+                android:visibility="gone" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:id="@+id/item_adapter_my_chat_count"
+                android:layout_width="@dimen/size_20"
+                android:layout_height="@dimen/size_20"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_4"
+                android:background="@drawable/shape_circle_pink"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_10"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_15"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/item_adapter_my_chat_right_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                    android:id="@+id/item_adapter_my_chat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/size_3"
+                    android:text="LCA "
+                    android:textColor="@color/light_text"
+                    android:textSize="@dimen/size_10"
+                    android:visibility="gone" />
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                    android:id="@+id/item_adapter_my_chat_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_3"
+                    android:layout_toRightOf="@+id/item_adapter_my_chat_name"
+                    android:text="Rome"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14" />
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                    android:id="@+id/item_adapter_my_chat_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/size_5"
+                    android:text="1:33"
+                    android:textColor="@color/light_text"
+                    android:textSize="@dimen/size_10" />
+
+            </RelativeLayout>
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:id="@+id/item_adapter_my_chat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_10"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="If we play heads and tails, what are the chances of my getting head with tails at the start before it goes up?"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_13" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view" />
+
+</LinearLayout>

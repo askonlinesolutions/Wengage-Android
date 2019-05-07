@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_chat_rooms_1_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Sub.ChatRooms1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/createGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/E7E7E7"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/qqq"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/creat_group" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:id="@+id/fragment_chat_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:paddingStart="@dimen/_7sdp"
+                android:paddingEnd="@dimen/_7sdp"
+                android:singleLine="true"
+                android:text="CHAT"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_13" />
+        </LinearLayout>
+
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewLight
+            android:id="@+id/fragment_chat_top_names"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_toRightOf="@+id/fragment_chat_title"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Kelly + 3"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/size_14"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/fragment_chat_layout_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/fragment_chat_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_cross" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_chat_layout_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/fragment_chat_layout_arrow"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/fragment_chat_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/fragment_chat_title"
+            android:background="#ECF0F1" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/fragment_chat_rooms_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/chatRecycler"
+            android:layout_above="@+id/fragment_chat_rooms_layout_bottom"
+            android:background="@color/colorGrey" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_chat_rooms_1_layout_relative"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/size_10"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/fragment_chat_rooms_1_image_bookmark"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="end|center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fav" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_chat_rooms_1_image_camera"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_bookmark"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/cameras" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_chat_rooms_1_image_emoji"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_camera"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/emoji_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_emoji" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_chat_rooms_1_image_send"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_emoji"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_chat_rooms_1_image_cross"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_send"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cross" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/emoji_editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_cross"
+                android:background="@android:color/transparent"
+                android:hint="Type a Message ..."
+                android:inputType="textShortMessage"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/size_13"
+                android:visibility="gone" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:id="@+id/fragment_chat_rooms_1_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_cross"
+                android:background="@drawable/shape_border_grey"
+                android:hint="Type a Message ..."
+                android:inputType="textShortMessage"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/size_13"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_bookmark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                    android:id="@+id/fragment_profile_home_txt_venue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="VENUES"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_13" />
+
+                <View
+                    android:layout_width="1.5sp"
+                    android:layout_height="match_parent"
+                    android:background="@color/meg" />
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                    android:id="@+id/home3_bottom_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="EVENTS"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_13" />
+
+                <View
+                    android:layout_width="1.5sp"
+                    android:layout_height="match_parent"
+                    android:background="@color/meg" />
+
+                <LinearLayout
+                    android:id="@+id/home3_bottom_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/home3_heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_favorites" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.5sp"
+                    android:layout_height="match_parent"
+                    android:background="@color/meg" />
+
+                <LinearLayout
+                    android:id="@+id/home3_bottom_four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                        android:id="@+id/home3_recycle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="CUSTOM"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_13" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home3_recycler_venues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home3_recycler_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home3_recycler_heart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fitsSystemWindows="true"
+                android:scrollbars="none"
+                android:visibility="visible" />
+            <RelativeLayout
+                android:id="@+id/customLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:id="@+id/createEvnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Create custom event"
+                        android:padding="@dimen/_7sdp"
+                        android:textColor="@color/text_color"
+                        android:background="@color/E7E7E7"
+                        android:textAllCaps="true"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cross"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:rotation="45"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home3_recycler_custom_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:scrollbars="none"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="230dp"
+             android:id="@+id/fragment_chat_rooms_1_layout_bookmarks"
+             android:background="@color/white"
+             android:visibility=""
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="@dimen/size_3">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_one"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="@dimen/size_3">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_two"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="@dimen/size_3">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_three"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_four"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="@dimen/size_3">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="@dimen/size_3">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_five"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="@dimen/size_3">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_six"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="@dimen/size_3">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_seven"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_eight"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="@dimen/size_3">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="@dimen/size_3">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_five"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="@dimen/size_3">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_six"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="@dimen/size_3">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_seven"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/rest_eight"
+                         android:scaleType="fitXY"/>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+         </LinearLayout>-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_chat_rooms_1_layout_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="#FFFFFF"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_chat_rooms_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_chat_rooms_layout_bottom"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background"
+        android:visibility="gone" />
+
+</RelativeLayout>

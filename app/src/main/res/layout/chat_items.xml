@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bubble_layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_7sdp"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <LinearLayout
+                android:id="@+id/bubble_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/button_gray_chat1"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxEms="12"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Hi! new message"
+                    android:textColor="@android:color/primary_text_light" />
+
+                <TextView
+                    android:id="@+id/comming_msg_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_8sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/triangle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/imagelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/button_gray_chat1"
+                android:padding="@dimen/_8sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launchers_black"
+                android:visibility="visible"
+                app:riv_corner_radius="7dip"
+                app:riv_mutate_background="true" />
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/triangle" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1.20"
+                     android:background="@drawable/button_gray_chat1"
+                     android:orientation="horizontal"
+                     android:padding="10dp">
+
+                     <pikship.com.CustomTextRegular.CustomTextMedium
+                         android:id="@+id/coming_msg_tv"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:textColor="@color/textMedium"
+                         android:textSize="@dimen/text_10" />
+
+                     <pikship.com.CustomTextRegular.CustomTextMedium
+                         android:id="@+id/comming_msg_time"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="bottom"
+                         android:textColor="@color/textMedium"
+                         android:textSize="@dimen/text_8" />
+                 </LinearLayout>
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight=".50" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="10dp"
+                 android:orientation="horizontal">
+
+                 &lt;!&ndash;<TextView&ndash;&gt;
+                     &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+                     &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                     &lt;!&ndash;android:layout_weight=".50" />&ndash;&gt;
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/button_blue_chat2"
+                     android:orientation="horizontal"
+                     android:padding="10dp">
+
+                     <pikship.com.CustomTextRegular.CustomTextMedium
+                         android:id="@+id/send_msg_tv"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:textColor="@color/textMedium"
+                         android:textSize="@dimen/text_10" />
+
+                     <pikship.com.CustomTextRegular.CustomTextMedium
+                         android:id="@+id/send_time_tv"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="bottom"
+                         android:textColor="@color/textMedium"
+                         android:textSize="@dimen/text_8" />
+                 </LinearLayout>
+             </LinearLayout>
+         </LinearLayout>
+     </ScrollView>
+ -->
+</RelativeLayout>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back_white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.20"
+                        android:background="@drawable/button_gray_chat1"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <pikship.com.CustomTextRegular.CustomTextMedium
+                            android:id="@+id/coming_msg_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/loren"
+                            android:textColor="@color/textMedium"
+                            android:textSize="@dimen/text_10" />
+
+                        <pikship.com.CustomTextRegular.CustomTextMedium
+                            android:id="@+id/comming_msg_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text="2:20pm"
+                            android:textColor="@color/textMedium"
+                            android:textSize="@dimen/text_8" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.20"
+                        android:background="@drawable/button_blue_chat2"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <pikship.com.CustomTextRegular.CustomTextMedium
+                            android:id="@+id/send_msg_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/loren"
+                            android:textColor="@color/textMedium"
+                            android:textSize="@dimen/text_10" />
+
+                        <pikship.com.CustomTextRegular.CustomTextMedium
+                            android:id="@+id/send_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text="2:21pm"
+                            android:textColor="@color/textMedium"
+                            android:textSize="@dimen/text_8" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>-->

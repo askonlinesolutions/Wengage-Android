@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/recycler_top_profiles_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profileg" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/top_profile_check"
+                    android:src="@drawable/ic_check"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:id="@+id/fragment_dashboard_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Carol"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_15"
+                android:textStyle="bold" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                android:id="@+id/city_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Toronto"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_13" />
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/size_10"-->
+            <!--android:layout_marginTop="@dimen/size_15"-->
+            <!--android:orientation="vertical">-->
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_gray_bg"
+                android:padding="@dimen/size_5"
+                android:maxLines="5"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="Torontohdhsdjfisjf skdfjsif s sfdijsif sdjfisf sdfjisf sdfisfd sdijfisd fsdifdjsf "
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_10" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<com.askonlinesolutions.wengage.CustomTexts.CustomTextViewLight-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawablePadding="@dimen/size_10"-->
+            <!--android:drawableRight="@drawable/ic_tick"-->
+            <!--android:padding="@dimen/size_5"-->
+                <!--android:text="10.1.2018  12:40 pm"-->
+                <!--android:textColor="@color/text_color"-->
+                <!--android:textSize="@dimen/size_7" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/size_10"-->
+            <!--android:src="@drawable/ic_tick" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

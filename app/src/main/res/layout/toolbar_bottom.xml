@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ECF0F1" />
+
+    <!--
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+            android:id="@+id/bottom_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="bottom_click"
+            android:text="CHAT"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+            android:id="@+id/bottom_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="bottom_click"
+            android:text="VENUES"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/notification_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icon_main"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+            android:id="@+id/bottom_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="bottom_click"
+            android:text="EVENTS"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+            android:id="@+id/bottom_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="bottom_click"
+            android:text="@string/in_the_know"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <!--
+        </android.support.v7.widget.Toolbar>
+    -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ECF0F1" />
+
+</LinearLayout>

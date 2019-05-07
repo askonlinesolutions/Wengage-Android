@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/_55sdp"
+    tools:context="com.askonlinesolutions.wengage.Fragment.Main.venue.VenueHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragment_venue_main_layout">
+
+        <LinearLayout
+            android:id="@+id/home_venue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:id="@+id/home_title"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@color/E7E7E7"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Venues"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_13"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/home2_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center_vertical"
+                    android:paddingLeft="15dp">
+
+                    <ImageView
+                        android:id="@+id/home2_image_women"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_women" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_user_list_top_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp">
+
+                    <ImageView
+                        android:id="@+id/home_image_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/bg_1" />
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_top_profiles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone" />
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:id="@+id/not_available_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="Users not available"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/size_18"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/home_top_profile_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/home_top_profile_switch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/size_16"
+                            android:thumb="@drawable/switch_thumb_1"
+                            app:track="@drawable/switch_track_1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/shape_round_white_"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/venue_category_recycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/size_10">
+
+                            </android.support.v7.widget.RecyclerView>
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <com.askonlinesolutions.wengage.Helper.CustomViewPager
+                            android:id="@+id/home_viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_round_white_"
+                            android:visibility="gone" />
+
+                        <!-- <android.support.design.widget.TabLayout
+                             android:id="@+id/tab_layout"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             app:tabBackground="@drawable/shape_tab_selector"
+                             app:tabGravity="center"
+                             app:tabIndicatorHeight="0dp"/>-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/locationLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/whats_on_in"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/size_14" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                          android:id="@+id/countryName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="@string/toronto..."
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/size_14" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recycler_home_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_venue_home_fragment_container"/>
+
+
+</RelativeLayout>

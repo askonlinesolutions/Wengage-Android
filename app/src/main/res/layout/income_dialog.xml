@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:text="$0 - $50"
+        android:textSize="@dimen/_14sdp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/first"
+        android:background="@color/black_transparent" />
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/view1"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:text="$50 - $100K"
+        android:textSize="@dimen/_14sdp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/second"
+        android:background="@color/black_transparent" />
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/view2"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:text="$100 - $200K"
+        android:textSize="@dimen/_14sdp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/third"
+        android:background="@color/black_transparent" />
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:id="@+id/fourth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/view3"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:text="$200 +"
+        android:textSize="@dimen/_14sdp" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/fourth"
+        android:background="@color/black_transparent" />
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:id="@+id/fifith"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/view4"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:text="Doesn't matter"
+        android:textSize="@dimen/_14sdp" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/fifith"
+        android:background="@color/black_transparent" />
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:id="@+id/sixth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/view5"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:text="Rather not say"
+        android:textSize="@dimen/_14sdp" />
+</RelativeLayout>
+

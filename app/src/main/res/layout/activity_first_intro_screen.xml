@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom|center"
+                android:paddingHorizontal="@dimen/size_15">
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to Wengage"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_24" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/size_5"
+                android:background="@color/ECF0F1" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".72"
+                android:gravity="center_horizontal"
+                android:text="@string/first_intro_screen_texts"
+                android:textSize="@dimen/size_18"
+                android:textColor="@color/colorGrey"/>
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".72"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_horizontal"
+                android:text="@string/first_intro_screen_text"
+                android:textSize="@dimen/size_18"
+                android:textColor="@color/colorGrey"/>
+            
+
+        </LinearLayout>
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBlack
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/shape_button"
+                android:layout_margin="25dp"
+                android:text="Next"
+                android:gravity="center"
+                android:onClick="nextScreen"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+    </LinearLayout>
+</ScrollView>

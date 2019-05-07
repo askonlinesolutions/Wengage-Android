@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Fragment.NotificationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/E7E7E7"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Notifications"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:textSize="13dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/home3_crosss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cross"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="@dimen/size_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:id="@+id/new_btn_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/theme_blue1"
+                android:drawableTop="@drawable/logo"
+                android:gravity="center"
+                android:padding="@dimen/size_5"
+                android:paddingBottom="@dimen/size_5"
+                android:text="News"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_10" />
+
+            <View
+                android:id="@+id/news_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/text_color_meg"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:id="@+id/invites_btn_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/theme_blue1"
+                android:drawableTop="@drawable/email"
+                android:gravity="center"
+                android:padding="@dimen/size_5"
+                android:paddingBottom="@dimen/size_5"
+                android:text="Invites"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_10" />
+
+            <View
+                android:id="@+id/invite_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/text_color_meg"
+
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:id="@+id/chats_btn_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/sky_blue"
+                android:drawableTop="@drawable/message"
+                android:gravity="center"
+                android:padding="@dimen/size_5"
+                android:paddingBottom="@dimen/size_5"
+                android:text="Chats"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_10" />
+
+            <View
+                android:id="@+id/chat_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/text_color_meg"
+
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                android:id="@+id/venue_btn_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/theme_blue1"
+                android:drawableTop="@drawable/location"
+                android:gravity="center"
+                android:padding="@dimen/size_5"
+                android:paddingBottom="@dimen/size_5"
+                android:text="Venue Activities"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_10" />
+
+            <View
+                android:id="@+id/venue_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/text_color_meg"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                 <!--   <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:id="@+id/influencer_btn_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/theme_blue1"
+                        android:drawableTop="@drawable/mask"
+                        android:gravity="center"
+                        android:padding="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:text="Influencer"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_10" />-->
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:id="@+id/influencer_btn_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/theme_blue1"
+                        android:drawableTop="@drawable/mask"
+                        android:gravity="center"
+                        android:padding="@dimen/size_5"
+                        android:paddingBottom="@dimen/size_5"
+                        android:text="Influencer"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_10" />
+
+                    <View
+                        android:id="@+id/influencer_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/text_color_meg"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+
+       <!-- <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_weight="1"
+            android:background="@color/theme_blue1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                    android:id="@+id/influencer_btn_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/theme_blue1"
+                    android:drawableTop="@drawable/mask"
+                    android:drawablePadding="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/size_5"
+                    android:paddingBottom="@dimen/size_5"
+                    android:text="Influencer"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_9" />
+
+                <TextView
+                    android:id="@+id/influencer_count"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/red_circuler_tv"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7sdp"
+                    android:visibility="gone" />
+
+
+                <View
+                    android:id="@+id/influencer_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/influencer_btn_tv"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@color/text_color_meg"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/notificationLayout"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+           >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/news_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/invites_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/chats_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/venue_activity_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_15"
+                android:layout_marginRight="@dimen/size_10"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/influencer_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:visibility="gone" />
+
+
+        </FrameLayout>
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+            android:id="@+id/noNotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="There are currently no notifications."
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

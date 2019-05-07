@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_search"
+    android:orientation="vertical"
+    tools:context="com.askonlinesolutions.wengage.Activity.Sub.Search">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_search"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_search_"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_5"
+            android:visibility="visible">
+
+            <AutoCompleteTextView
+                android:id="@+id/search_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="Search here ..."
+                android:imeOptions="actionSearch"
+                android:padding="@dimen/size_5"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/ECF0F1" />
+
+
+            <ImageView
+                android:id="@+id/search_cross"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cross_b" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="visible">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+  <FrameLayout
+      android:id="@+id/search_fragment_cuntainer"
+      android:layout_width="match_parent"
+      android:visibility="gone"
+      android:layout_height="match_parent">
+
+  </FrameLayout>
+
+
+</RelativeLayout>
+
+
+
+
+

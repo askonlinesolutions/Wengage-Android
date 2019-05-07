@@ -1,0 +1,97 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="40dp">
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_edit"
+            android:layout_alignParentRight="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/shape_button"
+            android:ems="10"
+           android:enabled="false"
+            android:focusable="true"
+            android:id="@+id/event_name"
+            android:hint="Event/Venue Name"
+            android:layout_marginTop="70dp"
+            android:textColor="#000000"
+            android:paddingLeft="0dp"
+            android:drawablePadding="5dp"
+            android:textColorHint="#999"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/shape_button"
+            android:ems="10"
+            android:enabled="false"
+            android:id="@+id/event_date"
+            android:layout_below="@+id/event_name"
+            android:hint="Event Date"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:paddingLeft="0dp"
+            android:drawablePadding="5dp"
+            android:textColorHint="#999"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/shape_button"
+            android:ems="10"
+            android:enabled="false"
+            android:id="@+id/event_time"
+            android:layout_below="@+id/event_date"
+            android:hint="Event Time"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:paddingLeft="0dp"
+            android:drawablePadding="5dp"
+            android:textColorHint="#999"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/shape_button"
+            android:ems="10"
+            android:enabled="false"
+            android:id="@+id/location"
+            android:layout_below="@+id/event_time"
+            android:hint="Location"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:paddingLeft="0dp"
+            android:drawablePadding="5dp"
+            android:textColorHint="#999"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/location"
+            android:text="Submit"
+            android:gravity="center"
+            android:id="@+id/submit_button"
+            android:background="@drawable/shape_button"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </RelativeLayout>
+</ScrollView>

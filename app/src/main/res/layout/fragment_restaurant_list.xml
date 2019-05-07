@@ -1,0 +1,304 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/_60sdp"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.askonlinesolutions.wengage.Fragment.Main.venue.RestaurantList">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/bg_1"/>
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/category_list_layout_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/category_list_layout_right"
+            android:orientation="horizontal">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:id="@+id/category_list_title"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@color/E7E7E7"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Venues"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_13"
+                android:visibility="visible" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:id="@+id/category_list_language"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/category_list_title"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="French"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_13" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/category_list_layout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="end|center_vertical">
+
+            <LinearLayout
+                android:id="@+id/home2_women"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:paddingLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/home2_image_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_women" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fragment_res_list_arrow_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/category_list_image_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/arrow_down" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".3dp"
+        android:background="@color/E7E7E7" />
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_top_profiles_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/restaurant_list_top_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/restaurant_list_top_profile_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:thumb="@drawable/switch_thumb_1"
+            app:track="@drawable/switch_track_1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/restaurant_list_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_our_picks" />
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_round_category_top"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingBottom="4dp"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+            android:text="Our Picks"
+            android:textColor="@color/text_color_meg"
+            android:textSize="@dimen/size_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/restaurant_list_top_layout_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                        android:id="@+id/allTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/shape_round_category_top"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="All"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_14" />
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                        android:id="@+id/todayTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@drawable/shape_round_category_top"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Today"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_14" />
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                        android:id="@+id/thisWeakTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@drawable/shape_round_category_top"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+
+                        android:text="This weak"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_14" />
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                        android:id="@+id/thisMonthTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@drawable/shape_round_category_top"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+
+                        android:text="This month"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_14" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/restaurant_details_table"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/ic_tab"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/filter_icon_id"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_filter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_category_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_category_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_restaurant_list_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sorry,No venue available" />
+
+</LinearLayout>

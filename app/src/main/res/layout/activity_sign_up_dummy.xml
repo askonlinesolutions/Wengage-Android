@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    tools:context=".Activity.SignUpDummy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_140sdp"
+            android:gravity="center"
+            android:text="Tap on the event you are"
+            android:textSize="@dimen/_16sdp" />
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:text=" interested in and see women"
+            android:textSize="@dimen/_16sdp" />
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:text=" looking to do the same thing"
+            android:textSize="@dimen/_16sdp" />
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="-at the same time"
+            android:textSize="@dimen/_16sdp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:text="Connect to chat"
+        android:textSize="@dimen/_18sdp" />
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Make a plan"
+        android:textSize="@dimen/_18sdp" />
+
+</LinearLayout>
+
+    </LinearLayout>
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBlack
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_button"
+        android:layout_margin="25dp"
+        android:text="Next"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:id="@+id/item_layout"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+
+        app:srcCompat="@drawable/ic_loading" />
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:id="@+id/category_name"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="COFFEE TEA &amp; DESSERT"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:maxLines="2"
+        android:textSize="@dimen/size_12"
+        android:textColor="#000000" />
+
+    <View
+        android:id="@+id/item_bottom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:background="@color/text_color_meg"/>
+
+</LinearLayout>

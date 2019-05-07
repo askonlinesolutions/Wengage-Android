@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:text="Male"
+        android:textColor="@color/text_color"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/_14sdp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/male"
+        android:background="@color/black_transparent"
+        android:layout_height="@dimen/_1sdp" />
+</RelativeLayout>

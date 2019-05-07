@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:id="@+id/category_top_layout"
+    android:gravity="center"
+    android:background="@drawable/shape_round_category_top"
+    android:layout_marginRight="7dp">
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/tv_category_top"
+        android:text="Casual"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        android:background="@drawable/shape_round_category_top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"/>
+</LinearLayout>

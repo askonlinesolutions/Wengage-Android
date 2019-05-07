@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="@dimen/_90sdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+        android:id="@+id/sub_category_name"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="35dp"
+        android:background="@drawable/button_filled"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="The City"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_10" />
+
+
+</LinearLayout>

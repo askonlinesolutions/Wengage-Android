@@ -1,0 +1,1284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.askonlinesolutions.wengage.Fragment.Main.venue.RestaurantList">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bg_1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+            android:id="@+id/category_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/E7E7E7"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Venues"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/size_13"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical">
+
+            <LinearLayout
+                android:id="@+id/restaurant_detail_cross"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cross" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/fragment_res_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/restaurant_details_layout_venues"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/restaurant_details_above_right">
+
+                        <ImageView
+                            android:id="@+id/restaurant_details_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/zzzz" />
+
+                        <ImageView
+                            android:id="@+id/restaurant_details_circle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_circle" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:id="@+id/restaurant_details_ad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="5dp"
+                            android:alpha=".5"
+                            android:background="@drawable/shape_round_gray"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="AD"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+                    <!--
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:alpha=".5"
+                        android:background="@color/black" />-->
+                    <LinearLayout
+                        android:id="@+id/restaurant_details_above_right"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                            android:id="@+id/restaurant_details_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chez Restaurant"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/icon_star" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/icon_star" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/icon_star" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/icon_star" />
+
+                                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                            android:id="@+id/restaurant_details_review"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="30 Reviews"
+                                            android:textColor="@color/text_color_tab"
+                                            android:textSize="8sp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                                            android:id="@+id/restaurant_details_km"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="2.8km from you"
+                                            android:textColor="@color/text_color_tab"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/restaurant_details_bookmarks_venues"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_fav" />
+
+                                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                                            android:id="@+id/restaurant_details_interested_venues"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/shape_round_bg_2"
+                                            android:gravity="center"
+                                            android:paddingLeft="15dp"
+                                            android:paddingTop="5dp"
+                                            android:paddingRight="15dp"
+                                            android:paddingBottom="5dp"
+                                            android:text="Interested"
+                                            android:textColor="@color/text_color"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="end"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/restaurant_details_butterfy"
+                                        android:layout_width="38dp"
+                                        android:layout_height="38dp"
+                                        android:src="@drawable/icon_our_picks_1" />
+
+                                    <ImageView
+                                        android:id="@+id/restaurant_details_check"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:src="@drawable/ic_check" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5">
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:id="@+id/restaurant_details_above_description"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/restaurant_details_above_arrow"
+                                    android:layout_alignParentTop="true"
+                                    android:maxLines="4"
+                                    android:padding="5dp"
+                                    android:text="Chez Restaurant is the first in Toronto to bring you this fresh, flavourful, and fun experience. We take the first freshest seafood, toss it in a blend of Asian-inspired spices and aromatics. We serve our food messy to let you enjoy it in a fun and unique way."
+                                    android:textSize="11sp" />
+
+                                <ImageView
+                                    android:id="@+id/restaurant_details_above_arrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:src="@drawable/arrow_down" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <!--            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:layout_marginBottom="7dp"
+                                    android:layout_marginTop="7dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Patio"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="8dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:background="@drawable/shape_round_bg_1"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp"
+                                        android:text="Fine Dining"
+                                        android:paddingLeft="10dp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="8dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:background="@drawable/shape_round_bg_1"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/heart"/>
+
+                                </LinearLayout>-->
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/restaurant_details_layout_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/restaurant_details_events_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/restaurant_details_events_circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_circle" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/shape_round_white">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                            android:id="@+id/restaurant_details_events_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_40sdp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                            android:id="@+id/categoryName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/restaurant_details_events_name"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="11sp" />
+
+                        <ImageView
+                            android:id="@+id/mapIcon"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:src="@drawable/ic_map_marker"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/categoryName"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <RatingBar
+                                            android:id="@+id/fragment_res_detail_rating"
+                                            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                            android:id="@+id/restaurant_details_events_reviews"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="30 Reviews"
+                                            android:textColor="@color/text_color_tab"
+                                            android:textSize="10sp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/restaurant_details_events_bookmarks"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="10dp"
+
+                                    android:src="@drawable/ic_favorites_1" />
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                                    android:id="@+id/restaurant_details_events_interested"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/shape_round_bg_2"
+                                    android:gravity="center"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Interested"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/restaurant_details_events_check"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="10dp"
+                                    app:srcCompat="@drawable/ic_check" />
+
+                                <ImageView
+                                    android:id="@+id/restaurant_details_events_butterfly"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    app:srcCompat="@drawable/icon_our_picks" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/desLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/restaurant_details_description_arrow_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/restaurant_details_description_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/arrow_down" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                    android:id="@+id/restaurant_details_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurant_details_description_arrow_layout"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="Currently Interested"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text=" / Recommended"
+                                android:textColor="@color/theme_blue"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/restaurant_detail_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp">
+
+                            <ImageView
+                                android:id="@+id/restaurant_details_image_arrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/arrow_up" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/fragment_venue_detail_interested_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#BFBFBF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/restaurant_detail_bottom_one"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/restaurant_detail_image_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_dot" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#BFBFBF" />
+
+                        <LinearLayout
+                            android:id="@+id/restaurant_detail_bottom_two"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                                android:id="@+id/restaurant_detail_image_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="EVENTS"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/size_13" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#BFBFBF" />
+
+                        <LinearLayout
+                            android:id="@+id/restaurant_detail_bottom_three"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                android:id="@+id/restaurant_detail_image_three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Features"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorAccent" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#BFBFBF" />
+
+                        <LinearLayout
+                            android:id="@+id/restaurant_detail_bottom_four"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/restaurant_detail_image_four"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_edit_b" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#BFBFBF" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_venue_detail_info_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:visibility="visible">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/restaurant_details_descriptions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:text="Chez Restaurant is the first in Toronto to bring you this fresh, flavourful, and fun experience. We take the first freshest seafood, toss it in a blend of Asian-inspired spices and aromatics. We serve our food messy to let you enjoy it in a fun and unique way."
+                            android:textSize="@dimen/size_14"
+                            android:visibility="gone" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightGrey"
+                            android:padding="8dp"
+                            android:text="INFORMATION"
+                            android:textSize="@dimen/size_16" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_time"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Timing: "
+                            android:textColor="@color/black"
+                            android:visibility="gone" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/fragment_venue_detail_info_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="35dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:text="NA "
+                            android:textSize="@dimen/size_12"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp">
+
+                            <ImageView
+                                android:id="@+id/addressIcon"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:src="@drawable/address" />
+
+                            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                android:id="@+id/add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Address"
+                                android:layout_toRightOf="@+id/addressIcon"
+                                android:textColor="@color/black" />
+                            <ImageView
+                                android:id="@+id/pathIcon"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/address" />
+
+                        </RelativeLayout>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/fragment_venue_detail_info_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="35dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:textSize="@dimen/size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_17sdp"
+
+                                android:src="@drawable/contacts" />
+
+                            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                android:id="@+id/addss"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Phone No. :"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/fragment_venue_detail_info_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="35dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:textSize="@dimen/size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_17sdp"
+
+                                android:src="@drawable/parkings" />
+
+                            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                android:id="@+id/adds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Parking :"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/fragment_venue_detail_info_parking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="35dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:textSize="@dimen/size_12" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/openDays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@color/lightGrey"
+                            android:padding="8dp"
+                            android:text="HOURS"
+                            android:textSize="@dimen/size_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="Monday :"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/size_14" />
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:id="@+id/monday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="NA"
+                                    android:textSize="@dimen/size_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+
+                                android:weightSum="2">
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="Tuesday :"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/size_14" />
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:id="@+id/tuesday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="NA"
+                                    android:textSize="@dimen/size_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="Wednesday :"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/size_14" />
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:id="@+id/wednesday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="NA"
+                                    android:textSize="@dimen/size_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="Thrusday :"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/size_14" />
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:id="@+id/thrusday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="NA"
+                                    android:textSize="@dimen/size_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="Friday :"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/size_14" />
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:id="@+id/friday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="NA"
+                                    android:textSize="@dimen/size_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="Saturday :"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/size_14" />
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:id="@+id/saturday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="NA"
+                                    android:textSize="@dimen/size_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="Sunday :"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/size_14" />
+
+                                <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                                    android:id="@+id/sunday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="NA"
+                                    android:textSize="@dimen/size_14" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/fragment_venue_detail_info_pay_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@color/lightGrey"
+                            android:padding="8dp"
+                            android:text="PAYMENT"
+                            android:textSize="@dimen/size_16" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/fragment_venue_detail_info_payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="25dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="5dp"
+                            android:text="NA"
+                            android:textSize="@dimen/size_12" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@color/lightGrey"
+                            android:padding="8dp"
+                            android:text="Note"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/size_16" />
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/notes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="25dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="5dp"
+                            android:text="NA"
+                            android:textSize="@dimen/size_12" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/restaurant_details_recycler_venues"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="fill_vertical"
+                        android:background="@color/white"
+                        android:scrollbars="none"
+                        android:visibility="gone"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_venue_detail_info_features_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp" />
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/restaurant_details_mapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/restaurant_details_rating_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Review :-"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_65sdp"
+                            android:layout_marginStart="@dimen/_40sdp"
+                            android:layout_marginEnd="@dimen/_40sdp"
+                            android:background="@drawable/review_drawable">
+
+                            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                                android:id="@+id/reviewEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:gravity="start|top"
+                                android:hint="Write your review ..."
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+                        <RatingBar
+                            android:id="@+id/fragment_venue_detail_info_rateus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:max="5"
+                            android:progressTint="@color/colorAccent"
+                            android:scaleX=".7"
+                            android:scaleY=".7" />
+
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:id="@+id/fragment_venue_detail_info_rate_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/button_rect_rating"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="Submit"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/size_16" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:background="#BFBFBF" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/fragment_venue_detail_info_rating_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <!--<RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="3.5"/>
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="3.0"/>
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="4.5"/>-->
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fragment_res_detail_progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/load"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

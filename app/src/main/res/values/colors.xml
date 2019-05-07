@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E45A7A</color>
+    <color name="colorPrimaryDark">#c2516c</color>
+    <color name="colorAccent">#E45A7A</color>
+    <color name="theme_blue">#57C8F3</color>
+    <color name="theme_blue1">#D7ECFA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_transparent">#8c000000</color>
+    <color name="ECF0F1">#ECF0F1</color>
+    <color name="bg_1">#D5EBF9</color>
+    <color name="bg_2">#CACCD1</color>
+    <color name="bg_category_top">#EEEEEE</color>
+    <color name="text_color">#34394D</color>
+    <color name="E7E7E7">#E7E7E7</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="background">#F0F9FD</color>
+    <color name="background1">#ECF7FD</color>
+    <color name="text_color_meg">#E45A7A</color>
+    <color name="text_color_tab">#BFBFBF</color>
+    <color name="meg">#CACCD1</color>
+    <color name="colorGrey">#848484</color>
+    <color name="lightGrey">#FFCFCDCD</color>
+
+    <color name="view">#c2c2c3</color>
+
+    <color name="tab_indicator">#808184</color>
+    <color name="hint_color">#c2c4ca</color>
+    <color name="view_color">#CACCD1</color>
+<color name="sky_blue">#87CEFA</color>
+    <color name="light_text">#949AA8</color>
+    <color name="dark_blue">#4c71ec</color>
+
+    <!--pickship -->
+    <color name="colorBgGrey">#EEEEEE</color>
+</resources>

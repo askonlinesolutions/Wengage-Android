@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_chat_rooms_1_parent_layout"
+    tools:context=".Fragment.Sub.ChatRooms1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_chat_rooms_layout_bottom"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/fragment_chat_rooms_1_layout_relative"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/size_10"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_image_bookmark"
+                android:gravity="end|center_vertical"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fav"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_image_camera"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_bookmark">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_image_emoji"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_camera">
+
+                <ImageView
+                    android:id="@+id/emoji_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_emoji"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_image_send"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_emoji">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_send"/>
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_edit_text"
+                android:hint="Type a Message ..."
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_13"
+                android:textColorHint="@color/hint_color"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_send"
+                android:layout_marginRight="@dimen/size_10"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/fragment_chat_rooms_1_layout_linear"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_one"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_two"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_three"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_four"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_five"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_six"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_seven"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_eight"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_five"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_six"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_seven"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_eight"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/footer_for_emoticons"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background"
+        android:layout_above="@+id/fragment_chat_rooms_layout_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/size_10">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="@dimen/size_10">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:id="@+id/image1"
+                    android:src="@drawable/pink_one"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image1"
+                    android:layout_marginLeft="@dimen/size_10">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Hi Carol.  Welcome to Toronto! I see you are looking at Terroni too.  "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_border_grey"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_name1"
+                            android:text="LCA "
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/size_3"/>
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_city1"
+                            android:text="Rome"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_toRightOf="@+id/item_adapter_my_chat_name1"
+                            android:layout_marginBottom="@dimen/size_3"/>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:33"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:drawableRight="@drawable/ic_right"
+                            android:drawablePadding="@dimen/size_5"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="	Hey Lea.  I am! Have you been to Terroni before?"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="right"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_background_blue"/>
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:53"
+                        android:textColor="@color/light_text"
+                        android:textSize="@dimen/size_10"
+                        android:layout_gravity="end"
+                        android:drawableRight="@drawable/ic_right"
+                        android:drawablePadding="@dimen/size_5"
+                        android:layout_marginTop="@dimen/size_3"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="@dimen/size_10">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:id="@+id/image2"
+                    android:src="@drawable/pink_one"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image2"
+                    android:layout_marginLeft="@dimen/size_10">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="I have. Highly recommend their San Giorgio pizza. And great lattes.   "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_border_grey"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_name2"
+                            android:text="LCA "
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/size_3"/>
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_city2"
+                            android:text="Rome"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_toRightOf="@+id/item_adapter_my_chat_name2"
+                            android:layout_marginBottom="@dimen/size_3"/>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:33"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:drawableRight="@drawable/ic_right"
+                            android:drawablePadding="@dimen/size_5"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Now I’m hungry .  I’m in the city for a few days and hoping to have dinner there.  "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="right"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_background_blue"/>
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:53"
+                        android:textColor="@color/light_text"
+                        android:textSize="@dimen/size_10"
+                        android:layout_gravity="end"
+                        android:drawableRight="@drawable/ic_right"
+                        android:drawablePadding="@dimen/size_5"
+                        android:layout_marginTop="@dimen/size_3"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="@dimen/size_10">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:id="@+id/image3"
+                    android:src="@drawable/pink_one"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image3"
+                    android:layout_marginLeft="@dimen/size_10">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="I'm headed to London next month.Would be great to exchange recommendations over dinner.
+"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_border_grey"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_name3"
+                            android:text="LCA "
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/size_3"/>
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_city3"
+                            android:text="Rome"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_toRightOf="@+id/item_adapter_my_chat_name3"
+                            android:layout_marginBottom="@dimen/size_3"/>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:33"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:drawableRight="@drawable/ic_right"
+                            android:drawablePadding="@dimen/size_5"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="How is 7 pm for you?  If that works I’ll send over the invite."
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="right"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_background_blue"/>
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:53"
+                        android:textColor="@color/light_text"
+                        android:textSize="@dimen/size_10"
+                        android:layout_gravity="end"
+                        android:drawableRight="@drawable/ic_right"
+                        android:drawablePadding="@dimen/size_5"
+                        android:layout_marginTop="@dimen/size_3"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:id="@+id/image"
+                    android:src="@drawable/pink_one"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image"
+                    android:layout_marginLeft="@dimen/size_10">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Perfect!  Let’s meet right by the entrance of the restaurant. See you there! "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_border_grey"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_name1"
+                            android:text="LCA "
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/size_3"/>
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_city1"
+                            android:text="Rome"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_toRightOf="@+id/item_adapter_my_chat_name1"
+                            android:layout_marginBottom="@dimen/size_3"/>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:33"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:drawableRight="@drawable/ic_right"
+                            android:drawablePadding="@dimen/size_5"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        <!--    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:id="@+id/image1"
+                    android:src="@drawable/pink_three"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image1"
+                    android:layout_marginLeft="@dimen/size_10">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="I have. Highly recommend their San Giorgio pizza. And great lattes.   "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_border_grey"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_name2"
+                            android:text="LCA "
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/size_3"/>
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_city2"
+                            android:text="Rome"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_toRightOf="@+id/item_adapter_my_chat_name2"
+                            android:layout_marginBottom="@dimen/size_3"/>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:33"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:drawableRight="@drawable/ic_right"
+                            android:drawablePadding="@dimen/size_5"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:id="@+id/image2"
+                    android:src="@drawable/pink_six"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image2"
+                    android:layout_marginLeft="@dimen/size_10">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Now I’m hungry .  I’m in the city for a few days and hoping to have dinner there. "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_border_grey"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_name4"
+                            android:text="LCA "
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/size_3"/>
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_city4"
+                            android:text="Rome"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_toRightOf="@+id/item_adapter_my_chat_name4"
+                            android:layout_marginBottom="@dimen/size_3"/>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:33"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:drawableRight="@drawable/ic_right"
+                            android:drawablePadding="@dimen/size_5"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="I'm headed to London next month.Would be great to exchange recommendations over dinner."
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="right"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_background_blue"/>
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:53"
+                        android:textColor="@color/light_text"
+                        android:textSize="@dimen/size_10"
+                        android:layout_gravity="end"
+                        android:drawableRight="@drawable/ic_right"
+                        android:drawablePadding="@dimen/size_5"
+                        android:layout_marginTop="@dimen/size_3"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/fragment_chat_rooms_recycler"
+        android:background="@drawable/background"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/fragment_chat_rooms_layout_bottom"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_chat_rooms_1_parent_layout"
+    tools:context=".Fragment.Sub.ChatRooms1Fragment">
+
+    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_chat_rooms_layout_bottom"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/fragment_chat_rooms_1_layout_relative"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/size_10"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_image_bookmark"
+                android:gravity="end|center_vertical"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fav"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_image_camera"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_bookmark">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_image_emoji"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_camera">
+
+                <ImageView
+                    android:id="@+id/emoji_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_emoji"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_image_send"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_emoji">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_send"/>
+
+            </LinearLayout>
+            <com.askonlinesolutions.wengage.CustomTexts.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_chat_rooms_1_edit_text"
+                android:hint="Type a Message ..."
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_13"
+                android:textColorHint="@color/hint_color"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/fragment_chat_rooms_1_image_send"
+                android:layout_marginRight="@dimen/size_10"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/fragment_chat_rooms_1_layout_linear"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_one"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_two"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_three"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_four"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_five"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_six"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_seven"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_eight"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_five"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_six"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_seven"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rest_eight"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/footer_for_emoticons"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background"
+        android:layout_above="@+id/fragment_chat_rooms_layout_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/size_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Hi Carol.  Welcome to Toronto! I see you are looking at Terroni too.  "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="right"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_background_blue"/>
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:53"
+                        android:textColor="@color/light_text"
+                        android:textSize="@dimen/size_10"
+                        android:layout_gravity="end"
+                        android:drawableRight="@drawable/ic_right"
+                        android:drawablePadding="@dimen/size_5"
+                        android:layout_marginTop="@dimen/size_3"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:id="@+id/image"
+                    android:src="@drawable/pink_one"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image"
+                    android:layout_marginLeft="@dimen/size_10">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Hey Lea.  I am! Have you been to Terroni before?"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_border_grey"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_name1"
+                            android:text="LCA "
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/size_3"/>
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_city1"
+                            android:text="Rome"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_toRightOf="@+id/item_adapter_my_chat_name1"
+                            android:layout_marginBottom="@dimen/size_3"/>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:33"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:drawableRight="@drawable/ic_right"
+                            android:drawablePadding="@dimen/size_5"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:id="@+id/image1"
+                    android:src="@drawable/pink_three"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image1"
+                    android:layout_marginLeft="@dimen/size_10">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="I have. Highly recommend their San Giorgio pizza. And great lattes.   "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_border_grey"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_name2"
+                            android:text="LCA "
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/size_3"/>
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_city2"
+                            android:text="Rome"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_toRightOf="@+id/item_adapter_my_chat_name2"
+                            android:layout_marginBottom="@dimen/size_3"/>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:33"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:drawableRight="@drawable/ic_right"
+                            android:drawablePadding="@dimen/size_5"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:id="@+id/image2"
+                    android:src="@drawable/pink_six"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/image2"
+                    android:layout_marginLeft="@dimen/size_10">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Now I’m hungry .  I’m in the city for a few days and hoping to have dinner there. "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_border_grey"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_3">
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_name4"
+                            android:text="LCA "
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="@dimen/size_3"/>
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewItalic
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/item_adapter_my_chat_city4"
+                            android:text="Rome"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:layout_toRightOf="@+id/item_adapter_my_chat_name4"
+                            android:layout_marginBottom="@dimen/size_3"/>
+
+                        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:33"
+                            android:textColor="@color/light_text"
+                            android:textSize="@dimen/size_10"
+                            android:drawableRight="@drawable/ic_right"
+                            android:drawablePadding="@dimen/size_5"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="I'm headed to London next month.Would be great to exchange recommendations over dinner."
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/size_14"
+                        android:gravity="right"
+                        android:paddingTop="@dimen/size_3"
+                        android:paddingBottom="@dimen/size_3"
+                        android:paddingLeft="@dimen/size_15"
+                        android:paddingRight="@dimen/size_15"
+                        android:background="@drawable/shape_background_blue"/>
+                    <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:53"
+                        android:textColor="@color/light_text"
+                        android:textSize="@dimen/size_10"
+                        android:layout_gravity="end"
+                        android:drawableRight="@drawable/ic_right"
+                        android:drawablePadding="@dimen/size_5"
+                        android:layout_marginTop="@dimen/size_3"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/fragment_chat_rooms_recycler"
+        android:background="@drawable/background"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/fragment_chat_rooms_layout_bottom"/>
+
+</RelativeLayout>-->

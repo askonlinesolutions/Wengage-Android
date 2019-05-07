@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+      >
+
+        <RelativeLayout
+            android:id="@+id/aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center"
+                android:background="@drawable/pink_circle"
+                android:padding="3dp"
+                android:visibility="visible"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <com.askonlinesolutions.wengage.utils.CircleImageView
+                android:id="@+id/item_chat_rooms_image"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/active_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/aa"
+            android:baselineAligned="true"
+            android:orientation="vertical">
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:id="@+id/item_chat_rooms_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Just Opened"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_14" />
+
+            <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewBold
+                android:id="@+id/item_chat_rooms_active_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Active Members :"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/size_11" />
+
+        </LinearLayout>
+
+        <com.askonlinesolutions.wengage.CustomTexts.CustomTextViewRegular
+            android:id="@+id/item_chat_rooms_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/_5sdp"
+            android:drawableRight="@drawable/ic_right"
+            android:drawablePadding="@dimen/size_5"
+            android:text="1:33"
+            android:textColor="@color/light_text"
+            android:textSize="@dimen/size_10" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="1dp"
+        android:background="@color/view" />
+</LinearLayout>

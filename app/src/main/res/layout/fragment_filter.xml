@@ -1,0 +1,622 @@
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.askonlinesolutions.wengage.Fragments.Sub.Filter">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Most Popular"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:background="#F5F5F5"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@color/ECF0F1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="$"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="$$"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="$$$"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="$$$$"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Offering a Deal" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Hot and New" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Open at " />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Offering a Deal" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Distance"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:background="#F5F5F5"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/filter_layout_select_distance"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/filter_text_select_distance"
+                android:text="Best Match"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/filter_select_distance_image_arrow"
+                    android:src="@drawable/arrow_down"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filter_radio_group_select_distance"
+            android:orientation="vertical"
+            android:background="@color/ECF0F1"
+            android:visibility="visible"
+            android:animateLayoutChanges="true">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/filter_radio_1"
+                android:text="Best Match"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="1dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="0.5 km"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="1dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="2 km"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="1dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="5 km"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="1dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="15 km"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Sort by"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:background="#F5F5F5"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/filter_layout_sort_by"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/filter_text_sort_by"
+                android:text="Best Match"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/filter_sort_by_image_arrow"
+                    android:src="@drawable/arrow_down"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filter_radio_group_sort_by"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/ECF0F1"
+            android:animateLayoutChanges="true">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/filter_radio_2"
+                android:text="Best Match"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="1dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Distance"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="1dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Rating"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="1dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Most Reviewed"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="General Features"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:background="#F5F5F5"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Take-out" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Good for Groups" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Good for Kids" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Accepts Credit Cards" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Outdoor Seating" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Wheelchair Accessible" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Offrs Military Discount" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Gender Neutral Restrooms" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Full Bar" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Happy Hour" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Good for Breakfast" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Good for Brunch" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Good for Lunch" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Good for Dinner" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Good for Dessert" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Good for Late Night" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Music: DJ" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Music: Live" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textAlignment="viewStart"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:text="Free Wi-Fi" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ECF0F1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=""
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:gravity="bottom"
+            android:background="#F5F5F5"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
